@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: 
+#f5f5f5;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    padding-inline: 10%;
+}
+.h3descriptivo{
+    color: white;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, 
+#667eea 0%, 
+#764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+header h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.3);
+    margin: 20px 0;
+    object-fit: cover;
+}
+
+/* Secciones */
+section {
+    padding: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+/* Títulos */
+h2 {
+    color: 
+#667eea;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid 
+#667eea;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #444;
+    font-size: 1.3em;
+    margin: 20px 0 10px 0;
+}
+
+h4 {
+    color: #666;
+    font-size: 1.1em;
+    margin: 15px 0 8px 0;
+}
+
+h5 {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+li:before {
+    content: "▸";
+    color: 
+#667eea;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Enlaces */
+a {
+    color: 
+#667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: 
+#764ba2;
+    text-decoration: underline;
+}
+
+/* Efectos especiales */
+section {
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+}
